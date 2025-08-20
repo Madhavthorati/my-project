@@ -1,0 +1,8 @@
+1.I have created a text box where user can type anything
+2.A paragraph shows the number of characters typed
+3.The java script listens to the input which means it runs whenever the user types, deletes, or pastes text.
+4.The code counts the letters and shows the number right away.
+  LEARNING OUTCOMES 
+* learn how to make a text box where people can type
+* learn how to show the number of characters typed on the page
+*learn how to use JavaScript to watch what the user types
