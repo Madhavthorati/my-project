@@ -1,0 +1,7 @@
+1.To make a basic web page where we can draw on the screen using the mouse
+2.We use mouse events like mousedown, mousemove, and mouseup to track the mouse and draw lines
+3.A simple drawing tool appears on the web page where we can click, drag, and draw freely
+  LEARNING OUTCOMES
+*learnt how to use SVG to make simple graphics on a web page
+*Learned how mouse events help in making things interactive
+*Understood how to use JavaScript to create and update shapes while drawing
