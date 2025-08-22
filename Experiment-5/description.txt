@@ -1,0 +1,8 @@
+1.It shows a list of products on a web page.
+2.There is a dropdown menu with categories like All, Clothing, Electronics, and Books.
+3.When you choose a category, the code checks each product's category.
+4.It shows only the matching products and hides the others instantly
+  LEARNING OUTCOMES
+*learnt how to get elements from a webpage using JavaScript
+*understand how to use dropdown values to control what is shown
+*learnt how JavaScript and HTML work together to make pages interactive
