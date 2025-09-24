@@ -1,0 +1,37 @@
+Title
+Concurrent Ticket Booking System with Seat Locking and Confirmation
+
+Project Description
+This project demonstrates how to build a ticket booking system in Node.js with Express.js
+ that safely handles concurrent seat reservations. The system ensures that when one user 
+ locks a seat, it is temporarily unavailable to others until the user confirms the booking
+  or the lock automatically expires. This prevents race conditions and double booking, making
+   the application reliable for real-world use cases like movie theaters, concerts, or event bookings.
+
+Steps 
+
+1. Initialize Project – Set up a new Node.js project with Express.js (npm init -y and npm install express).
+2. Create Data Structure – Use an in-memory array/object to represent seats (e.g., available, locked, booked).
+
+Build Endpoints
+
+GET /seats → View all seat statuses.
+POST /lock/:seatId → Lock a seat for a user (if not already locked/booked).
+POST /confirm/:seatId → Confirm a locked seat as booked.
+
+3. Implement Locking Mechanism – When a seat is locked, store the userId + timestamp and set an expiry (1 minute) using setTimeout.
+4. Handle Edge Cases – Return clear error messages if:
+5. A locked seat is requested again.
+6. A booked seat is requested.
+7. A seat is confirmed without a valid lock.
+8. Add Automatic Lock Expiry – After 1 minute, reset seat status if not confirmed.
+9. Test Concurrent Requests – Use Postman or a simple script to simulate multiple users requesting the same seat at once.
+
+Learning Outcomes
+
+Learn to implement state management in memory for backend systems.
+Understand how to design a seat locking mechanism to avoid race conditions.
+Gain experience with concurrent request handling in Node.js.
+Practice building and testing RESTful APIs with Express.js.
+Learn to implement timeouts and auto-expiry logic.
+Strengthen backend development skills in synchronization and resource safety.
